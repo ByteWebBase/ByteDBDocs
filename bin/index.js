@@ -2,7 +2,6 @@
 
 const getTableProperties = require('../lib/getTableProperties.js');
 const getSchemaRefs = require('../lib/getSchemaRefs.js');
-
 const fs = require('fs');
 const { ModelExporter, Parser } = require('@dbml/core');
 
@@ -20,7 +19,7 @@ const renderTables = tables.map((table) => ({
   properties: getTableProperties(table),
 }));
 
-// 获得table的refs
+// 获得schema的refs
 const schemaRefs = getSchemaRefs(schema);
 
 // const tableProperties = getTableProperties(tables[0][0]);
