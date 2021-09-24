@@ -2,6 +2,8 @@
 
 const getTableProperties = require('../lib/getTableProperties.js');
 const getSchemaRefs = require('../lib/getSchemaRefs.js');
+const renderTable = require('../lib/renderTable.js');
+const renderSchemaRefs = require('../lib/renderSchemaRefs.js');
 const fs = require('fs');
 const { ModelExporter, Parser } = require('@dbml/core');
 
@@ -22,7 +24,17 @@ const renderTables = tables.map((table) => ({
 // 获得schema的refs
 const schemaRefs = getSchemaRefs(schema);
 
+// console.log('renderTable: ', renderTable(renderTables));
+// console.log('schemaRefs: ', renderSchemaRefs(schemaRefs));
+
+// console.log(renderTables[0]);
+// fs.writeFileSync(getPath(), );
+
 // const tableProperties = getTableProperties(tables[0][0]);
 // console.log('tableProperties: ', tableProperties);
 // console.log(database.schemas[0].tables[0]);
-console.log(database);
+// console.log(database);
+
+function getPath() {
+  return '../data/graph.ts';
+}
