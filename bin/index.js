@@ -20,6 +20,8 @@ const tablesForRender = tables.map((table) => ({
   name: table.name,
   entityType: 'FACT',
   properties: getTableProperties(table),
+  width: 170,
+  height: 200,
 }));
 
 // 获得schema的refs
