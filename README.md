@@ -19,11 +19,14 @@ $ yarn start
 ```
 ├── bin
 │   └──index.js               # 处理.dbml文件的脚本
+│
+├── src
+│   └──pages
+│      └──ERGraphDemo
+│         └──mock.ts          # 储存数据
 │   
 ├── lib                       # bin调用的函数库
 │
-├── data
-│   └──graph.ts               # 保存.dbml文件处理后的数据
 │   
 └── src                       # 可视化代码
 ```
@@ -31,8 +34,8 @@ $ yarn start
 ## 开发流程思路
 
 1. 通过包读取.dbml文件并得到db对象
-2. 根据db对象生成`graph.ts`
-3. 将`graph.ts`加入模板中，并启动
+2. 根据db对象生成`mock.ts`
+3. 将`mock.ts`加入模板中，并启动
 
 ## 参考资料
 

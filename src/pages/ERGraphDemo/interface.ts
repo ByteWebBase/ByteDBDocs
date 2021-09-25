@@ -40,6 +40,7 @@ export interface RelationCanvasModel {
   sourceEntityId: string;
   /** target端实体id */
   targetEntityId: string;
+  label?: string;
   // /** source端关联属性 */
   // sourceProperty: EntityProperty;
   // /** target端关联属性 */
