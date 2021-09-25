@@ -1,5 +1,5 @@
 import { Graph } from '@antv/x6';
-import { GridLayout, DagreLayout } from '@antv/layout';
+import { GridLayout, DagreLayout, CircularLayout } from '@antv/layout';
 import {
   BaseGraph,
   GraphOptions,
@@ -13,10 +13,27 @@ import Edge from '../graph/edge';
 import { CellController, EventController } from '../controller/index';
 import _ from 'lodash';
 // import ReactDOM from 'react-dom';
-const gridLayout = new GridLayout({
-  type: 'grid',
-  width: 1000,
-  height: 1000,
+// const gridLayout = new GridLayout({
+//   type: 'grid',
+//   width: 1000,
+//   height: 1000,
+//   nodeSize: 200,
+//   preventOverlap: true,
+//   sortBy: 'degree',
+// });
+// const circularLayout = new CircularLayout({
+//   type: 'circular',
+//   width: 1000,
+//   height: 1500,
+//   radius: 700,
+// })
+const dagreLayout = new DagreLayout({
+  type: 'dagre',
+  rankdir: 'LR',
+  align: 'UR',
+  ranksep: 80,
+  nodesep: 80,
+  controlPoints: true,
 });
 export default class X6BaseGraph implements BaseGraph {
   public graph!: Graph;
@@ -120,7 +137,9 @@ export default class X6BaseGraph implements BaseGraph {
     if (!graphData) {
       throw new Error('graphData must be defined first!');
     }
-    const newModel: any = gridLayout.layout(graphData);
+    // const newModel: any = gridLayout.layout(graphData); // 网格布局
+    // const newModel: any = circularLayout.layout(graphData); // 圆形布局
+    const newModel: any = dagreLayout.layout(graphData); // 层次布局
     const { addNodesData, addEdgesData } = this.graphContentDiff(newModel);
 
     this.graph.batchUpdate('updateGraph', () => {
