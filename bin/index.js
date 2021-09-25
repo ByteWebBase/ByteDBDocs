@@ -7,6 +7,7 @@ const renderSchemaRefs = require('../lib/renderSchemaRefs.js');
 const fs = require('fs');
 const path = require('path');
 const { ModelExporter, Parser } = require('@dbml/core');
+const prettier = require('prettier');
 
 const dbml = fs.readFileSync('poker.dbml', 'utf-8');
 const database = Parser.parse(dbml, 'dbml');
@@ -35,7 +36,12 @@ const prefix = `import {
 
 fs.writeFileSync(
   path.resolve(__dirname, '../src/pages/ERGraphDemo/mock.ts'),
-  prefix + renderTables(tablesForRender) + renderSchemaRefs(schemaRefs),
+  prettier.format(
+    prefix + renderTables(tablesForRender) + renderSchemaRefs(schemaRefs),
+    {
+      parser: 'babel',
+    },
+  ),
 );
 
 // console.log('renderTable: ', renderTable(renderTables));
