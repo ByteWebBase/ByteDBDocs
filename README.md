@@ -14,6 +14,12 @@ Start the dev server,
 $ yarn start
 ```
 
+The dbml file convert to js file
+
+```bash
+$ byte-db-docs build <file>
+```
+
 ## 文件结构
 
 ```
