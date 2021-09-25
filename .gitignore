@@ -4,8 +4,6 @@
 /node_modules
 /npm-debug.log*
 /yarn-error.log
-/yarn.lock
-/package-lock.json
 
 # production
 /dist
@@ -18,3 +16,13 @@
 /src/.umi-production
 /src/.umi-test
 /.env.local
+
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
