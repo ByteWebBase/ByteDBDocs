@@ -32,7 +32,7 @@ export default class Entity extends React.PureComponent<Props, {}> {
           </div>
           <div className="body">
             {entity.properties.map((property: EntityProperty) => {
-              console.log('11:', property.isPK);
+              // console.log('11:', property.isPK);
               return (
                 <div className="body-item" key={property.propertyId}>
                   <div className="name">

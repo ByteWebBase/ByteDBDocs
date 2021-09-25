@@ -1,4 +1,5 @@
 import { Graph } from '@antv/x6';
+import { GridLayout, DagreLayout } from '@antv/layout';
 import {
   BaseGraph,
   GraphOptions,
@@ -12,7 +13,11 @@ import Edge from '../graph/edge';
 import { CellController, EventController } from '../controller/index';
 import _ from 'lodash';
 // import ReactDOM from 'react-dom';
-
+const gridLayout = new GridLayout({
+  type: 'grid',
+  width: 1000,
+  height: 1000,
+});
 export default class X6BaseGraph implements BaseGraph {
   public graph!: Graph;
   public cellController!: CellController;
@@ -115,8 +120,8 @@ export default class X6BaseGraph implements BaseGraph {
     if (!graphData) {
       throw new Error('graphData must be defined first!');
     }
-
-    const { addNodesData, addEdgesData } = this.graphContentDiff(graphData);
+    const newModel: any = gridLayout.layout(graphData);
+    const { addNodesData, addEdgesData } = this.graphContentDiff(newModel);
 
     this.graph.batchUpdate('updateGraph', () => {
       if (addNodesData && addNodesData.length > 0) {

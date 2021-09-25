@@ -8,6 +8,8 @@ export const mockEntityData: EntityCanvasModel[] = [
     entityId: 'groups',
     name: 'groups',
     entityType: 'FACT',
+    width: 170,
+    height: 200,
     properties: [
       {
         propertyId: 'groupsTableProperties1',
@@ -45,6 +47,8 @@ export const mockEntityData: EntityCanvasModel[] = [
     entityId: 'payment_types',
     name: 'payment_types',
     entityType: 'FACT',
+    width: 170,
+    height: 200,
     properties: [
       {
         propertyId: 'payment_typesTableProperties6',
@@ -76,6 +80,8 @@ export const mockEntityData: EntityCanvasModel[] = [
     entityId: 'payments',
     name: 'payments',
     entityType: 'FACT',
+    width: 170,
+    height: 200,
     properties: [
       {
         propertyId: 'paymentsTableProperties10',
@@ -107,6 +113,8 @@ export const mockEntityData: EntityCanvasModel[] = [
     entityId: 'roles',
     name: 'roles',
     entityType: 'FACT',
+    width: 170,
+    height: 200,
     properties: [
       {
         propertyId: 'rolesTableProperties14',
@@ -126,6 +134,8 @@ export const mockEntityData: EntityCanvasModel[] = [
     entityId: 'users',
     name: 'users',
     entityType: 'FACT',
+    width: 170,
+    height: 200,
     properties: [
       {
         propertyId: 'usersTableProperties16',
@@ -181,6 +191,8 @@ export const mockEntityData: EntityCanvasModel[] = [
     entityId: 'transactions',
     name: 'transactions',
     entityType: 'FACT',
+    width: 170,
+    height: 200,
     properties: [
       {
         propertyId: 'transactionsTableProperties24',
@@ -212,6 +224,8 @@ export const mockEntityData: EntityCanvasModel[] = [
     entityId: 'tables',
     name: 'tables',
     entityType: 'FACT',
+    width: 170,
+    height: 200,
     properties: [
       {
         propertyId: 'tablesTableProperties28',
@@ -249,6 +263,8 @@ export const mockEntityData: EntityCanvasModel[] = [
     entityId: 'players',
     name: 'players',
     entityType: 'FACT',
+    width: 170,
+    height: 200,
     properties: [
       {
         propertyId: 'playersTableProperties33',
@@ -298,6 +314,8 @@ export const mockEntityData: EntityCanvasModel[] = [
     entityId: 'players_active',
     name: 'players_active',
     entityType: 'FACT',
+    width: 170,
+    height: 200,
     properties: [
       {
         propertyId: 'players_activeTableProperties40',
@@ -323,6 +341,8 @@ export const mockEntityData: EntityCanvasModel[] = [
     entityId: 'hands',
     name: 'hands',
     entityType: 'FACT',
+    width: 170,
+    height: 200,
     properties: [
       {
         propertyId: 'handsTableProperties43',
@@ -372,6 +392,8 @@ export const mockEntityData: EntityCanvasModel[] = [
     entityId: 'hands_active',
     name: 'hands_active',
     entityType: 'FACT',
+    width: 170,
+    height: 200,
     properties: [
       {
         propertyId: 'hands_activeTableProperties50',
@@ -397,6 +419,8 @@ export const mockEntityData: EntityCanvasModel[] = [
     entityId: 'pots',
     name: 'pots',
     entityType: 'FACT',
+    width: 170,
+    height: 200,
     properties: [
       {
         propertyId: 'potsTableProperties53',
@@ -428,6 +452,8 @@ export const mockEntityData: EntityCanvasModel[] = [
     entityId: 'betting_rounds',
     name: 'betting_rounds',
     entityType: 'FACT',
+    width: 170,
+    height: 200,
     properties: [
       {
         propertyId: 'betting_roundsTableProperties57',
@@ -483,6 +509,8 @@ export const mockEntityData: EntityCanvasModel[] = [
     entityId: 'betting_rounds_active',
     name: 'betting_rounds_active',
     entityType: 'FACT',
+    width: 170,
+    height: 200,
     properties: [
       {
         propertyId: 'betting_rounds_activeTableProperties65',
@@ -508,6 +536,8 @@ export const mockEntityData: EntityCanvasModel[] = [
     entityId: 'bets',
     name: 'bets',
     entityType: 'FACT',
+    width: 170,
+    height: 200,
     properties: [
       {
         propertyId: 'betsTableProperties68',
@@ -545,6 +575,8 @@ export const mockEntityData: EntityCanvasModel[] = [
     entityId: 'holdings',
     name: 'holdings',
     entityType: 'FACT',
+    width: 170,
+    height: 200,
     properties: [
       {
         propertyId: 'holdingsTableProperties73',
@@ -588,6 +620,8 @@ export const mockEntityData: EntityCanvasModel[] = [
     entityId: 'cards',
     name: 'cards',
     entityType: 'FACT',
+    width: 170,
+    height: 200,
     properties: [
       {
         propertyId: 'cardsTableProperties79',
@@ -607,6 +641,8 @@ export const mockEntityData: EntityCanvasModel[] = [
     entityId: 'holdings_to_cards',
     name: 'holdings_to_cards',
     entityType: 'FACT',
+    width: 170,
+    height: 200,
     properties: [
       {
         propertyId: 'holdings_to_cardsTableProperties81',
@@ -632,6 +668,8 @@ export const mockEntityData: EntityCanvasModel[] = [
     entityId: 'actions',
     name: 'actions',
     entityType: 'FACT',
+    width: 170,
+    height: 200,
     properties: [
       {
         propertyId: 'actionsTableProperties84',

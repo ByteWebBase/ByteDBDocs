@@ -22,6 +22,7 @@
     ]
   },
   "dependencies": {
+    "@antv/layout": "^0.1.19-beta.3",
     "@antv/x6": "^1.26.3",
     "@antv/x6-react-components": "^1.1.14",
     "@antv/x6-react-shape": "^1.5.0",
